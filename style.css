@@ -1,157 +1,95 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vtuber Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="vtuber-name">PurpleVibe</h1>
+            <p class="tagline">Bringing Color to Your World!</p>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#live">Live Stream</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-}
+    <section id="about" class="about">
+        <div class="container">
+            <img src="vtuber-avatar.png" alt="Vtuber Avatar" class="avatar">
+            <div class="intro-text">
+                <h2>Hi, I’m PurpleVibe!</h2>
+                <p>I’m a virtual YouTuber who loves gaming, singing, and interacting with fans. My mission is to brighten your day with vibrant and fun content. Join my streams for an unforgettable, colorful experience!</p>
+                <a href="#videos" class="btn">Watch My Videos</a>
+            </div>
+        </div>
+    </section>
 
-/* Header Section */
-header {
-    background-color: #ff6f61;
-    padding: 50px 0;
-    text-align: center;
-    color: white;
-}
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>Featured Videos</h2>
+            <div class="video-grid">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    <h3>Gaming Highlights</h3>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/abcd1234" frameborder="0" allowfullscreen></iframe>
+                    <h3>Karaoke Sessions</h3>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/wxyz5678" frameborder="0" allowfullscreen></iframe>
+                    <h3>Fan Interactions</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-header .vtuber-name {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+    <section id="live" class="live-stream">
+        <div class="container">
+            <h2>Live Stream</h2>
+            <p>Catch my live streams every week on YouTube and Twitch! I play games, chat with fans, and much more. Don’t miss out on the fun!</p>
+            <a href="https://youtube.com" class="btn">Watch Live</a>
+        </div>
+    </section>
 
-header .tagline {
-    font-size: 1.5em;
-    font-style: italic;
-}
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Schedule</h2>
+            <ul>
+                <li>Monday: Gaming Stream (8 PM - 10 PM)</li>
+                <li>Wednesday: Karaoke Session (7 PM - 9 PM)</li>
+                <li>Friday: Fan Interaction (6 PM - 8 PM)</li>
+            </ul>
+        </div>
+    </section>
 
-/* Introduction Section */
-.introduction {
-    padding: 50px 0;
-    background-color: #f0f0f0;
-}
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Have questions or just want to say hi? Reach out to me on social media or via email!</p>
+            <div class="socials">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">YouTube</a>
+            </div>
+        </div>
+    </section>
 
-.introduction .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
-
-.avatar {
-    max-width: 300px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.intro-text {
-    max-width: 500px;
-    text-align: left;
-}
-
-.intro-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.intro-text p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6f61;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-}
-
-.btn:hover {
-    background-color: #ff5733;
-}
-
-/* Videos Section */
-.videos {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.videos .container {
-    text-align: center;
-}
-
-.videos h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-}
-
-.video-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.video {
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-.video h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-iframe {
-    width: 100%;
-    height: 180px;
-    border-radius: 10px;
-    border: none;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.social-link:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .introduction .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .video-grid {
-        flex-direction: column;
-    }
-}
+    <footer>
+        <div class="container">
+            <p>© 2024 PurpleVibe. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

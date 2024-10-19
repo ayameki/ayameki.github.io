@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,23 +10,32 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="vtuber-name">Ayameki</h1>
+            <h1 class="vtuber-name">PurpleVibe</h1>
             <p class="tagline">Bringing Color to Your World!</p>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#live">Live Stream</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="introduction">
+    <section id="about" class="about">
         <div class="container">
             <img src="vtuber-avatar.png" alt="Vtuber Avatar" class="avatar">
             <div class="intro-text">
-                <h2>Hi, I’m Ayameki!</h2>
-                <p>I’m a virtual YouTuber who loves gaming, singing, and interacting with fans. My mission is to brighten your day with colorful and fun content. Come join my streams for a vibrant and energetic experience!</p>
+                <h2>Hi, I’m PurpleVibe!</h2>
+                <p>I’m a virtual YouTuber who loves gaming, singing, and interacting with fans. My mission is to brighten your day with vibrant and fun content. Join my streams for an unforgettable, colorful experience!</p>
                 <a href="#videos" class="btn">Watch My Videos</a>
             </div>
         </div>
     </section>
 
-    <section class="videos" id="videos">
+    <section id="videos" class="videos">
         <div class="container">
             <h2>Featured Videos</h2>
             <div class="video-grid">
@@ -47,16 +55,41 @@
         </div>
     </section>
 
-    <footer>
+    <section id="live" class="live-stream">
         <div class="container">
-            <p>© 2024 ColorVibe. All Rights Reserved.</p>
+            <h2>Live Stream</h2>
+            <p>Catch my live streams every week on YouTube and Twitch! I play games, chat with fans, and much more. Don’t miss out on the fun!</p>
+            <a href="https://youtube.com" class="btn">Watch Live</a>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Schedule</h2>
+            <ul>
+                <li>Monday: Gaming Stream (8 PM - 10 PM)</li>
+                <li>Wednesday: Karaoke Session (7 PM - 9 PM)</li>
+                <li>Friday: Fan Interaction (6 PM - 8 PM)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Have questions or just want to say hi? Reach out to me on social media or via email!</p>
             <div class="socials">
                 <a href="#" class="social-link">Twitter</a>
                 <a href="#" class="social-link">Instagram</a>
                 <a href="#" class="social-link">YouTube</a>
             </div>
         </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 PurpleVibe. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
-
