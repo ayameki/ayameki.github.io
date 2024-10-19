@@ -1,95 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vtuber Introduction</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1 class="vtuber-name">PurpleVibe</h1>
-            <p class="tagline">Bringing Color to Your World!</p>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#videos">Videos</a></li>
-                    <li><a href="#live">Live Stream</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="about" class="about">
-        <div class="container">
-            <img src="vtuber-avatar.png" alt="Vtuber Avatar" class="avatar">
-            <div class="intro-text">
-                <h2>Hi, I’m PurpleVibe!</h2>
-                <p>I’m a virtual YouTuber who loves gaming, singing, and interacting with fans. My mission is to brighten your day with vibrant and fun content. Join my streams for an unforgettable, colorful experience!</p>
-                <a href="#videos" class="btn">Watch My Videos</a>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
 
-    <section id="videos" class="videos">
-        <div class="container">
-            <h2>Featured Videos</h2>
-            <div class="video-grid">
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                    <h3>Gaming Highlights</h3>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/abcd1234" frameborder="0" allowfullscreen></iframe>
-                    <h3>Karaoke Sessions</h3>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/wxyz5678" frameborder="0" allowfullscreen></iframe>
-                    <h3>Fan Interactions</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Purple Theme Colors */
+:root {
+    --primary-color: #6a0dad;
+    --secondary-color: #b19cd9;
+    --accent-color: #ff69b4;
+    --light-bg: #f0f0f0;
+}
 
-    <section id="live" class="live-stream">
-        <div class="container">
-            <h2>Live Stream</h2>
-            <p>Catch my live streams every week on YouTube and Twitch! I play games, chat with fans, and much more. Don’t miss out on the fun!</p>
-            <a href="https://youtube.com" class="btn">Watch Live</a>
-        </div>
-    </section>
+/* Header Section */
+header {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
 
-    <section id="schedule" class="schedule">
-        <div class="container">
-            <h2>Schedule</h2>
-            <ul>
-                <li>Monday: Gaming Stream (8 PM - 10 PM)</li>
-                <li>Wednesday: Karaoke Session (7 PM - 9 PM)</li>
-                <li>Friday: Fan Interaction (6 PM - 8 PM)</li>
-            </ul>
-        </div>
-    </section>
+header .vtuber-name {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Have questions or just want to say hi? Reach out to me on social media or via email!</p>
-            <div class="socials">
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">Instagram</a>
-                <a href="#" class="social-link">YouTube</a>
-            </div>
-        </div>
-    </section>
+header .tagline {
+    font-size: 1.5em;
+    font-style: italic;
+}
 
-    <footer>
-        <div class="container">
-            <p>© 2024 PurpleVibe. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+header nav {
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: var(--accent-color);
+    border-color: white;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.avatar {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.intro-text h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Videos Section */
+.videos {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.videos .container {
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.video-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.video h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Live Stream Section */
+.live-stream {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.live-stream h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.live-stream p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Schedule Section */
+.schedule {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.schedule h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.schedule ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.schedule ul li {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-grid {
+        flex-direction: column;
+    }
+}
