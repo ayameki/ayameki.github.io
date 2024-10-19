@@ -13,10 +13,10 @@ body {
 
 /* Purple Theme Colors */
 :root {
-    --primary-color: #6a0dad;
-    --secondary-color: #b19cd9;
-    --accent-color: #ff69b4;
-    --light-bg: #f0f0f0;
+    --primary-color: #6a0dad;  /* Dark Purple */
+    --secondary-color: #b19cd9; /* Lighter Purple */
+    --accent-color: #ff69b4;    /* Pink Accent */
+    --light-bg: #f0f0f0;        /* Light Background */
 }
 
 /* Header Section */
