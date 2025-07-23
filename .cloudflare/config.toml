@@ -5,3 +5,4 @@ publish = "_site"
 [build.environment]
 BUNDLE_WITHOUT = "development:test"
 RUBY_VERSION = "3.2.2"
+BUNDLER_VERSION = "2.4.22"
