@@ -1,8 +1,9 @@
 title: Ayameki
 description: A website built with Jekyll and hosted on GitHub Pages.
 url: "https://www.ayameki.com"   # Replace with your website's URL
-baseurl: ""                      # For root directory, leave empty. For subdirectory, provide path (e.g., "/my-site").
-theme: jekyll-theme-minimal      # Choose the theme you'd like to use (can be customized)
+baseurl: ""                      # Leave blank for root
+theme: jekyll-theme-minimal
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
