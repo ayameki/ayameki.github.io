@@ -4,4 +4,4 @@ title: Home
 ---
 
 # Welcome to My Site!
-This is the homepage of my Jekyll-powered website.
+This site is under construction. It will be a while til I figure out how to do anything!
