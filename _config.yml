@@ -1,11 +1,14 @@
-title: Ayameki
-description: A website built with Jekyll and hosted on GitHub Pages.
-url: "https://www.ayameki.com"   # Replace with your website's URL
-baseurl: ""                      # Leave blank for root
-# theme: jekyll-theme-minimal
+title: My Website
+description: A simple Jekyll website with navigation tabs
+baseurl: ""
+url: "https://www.ayameki.com"  # Change this to your domain
+theme: minima
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-permalink: /:year/:month/:day/:title/
+# Navigation menu (edit this part)
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Videos
+    url: /videos
